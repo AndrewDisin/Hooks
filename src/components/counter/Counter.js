@@ -43,6 +43,7 @@ function Counter() {
 
   return (
     <div className="counter">
+      <h3>useState</h3>
       <h2 className="counter__value">{counterValue || 0}</h2>
       <button
         className="counter__button counter__button_incr"
