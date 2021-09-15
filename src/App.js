@@ -1,9 +1,9 @@
-// import Counter from './components/Counter/Counter';
-// import Tabs from './components/Tabs/Tabs';
-// import RenderCount from './components/RenderCount/RenderCount';
-// import OptimizedCounter from './components/OptimizedCounter/OptimizedCounter';
-// import ElementGenerator from './components/ElementGenerator/ElementGenerator';
-// import ContextWrapper from './components/ContextWrapper/ContextWrapper';
+import Counter from './components/Counter/Counter';
+import Tabs from './components/Tabs/Tabs';
+import RenderCount from './components/RenderCount/RenderCount';
+import OptimizedCounter from './components/OptimizedCounter/OptimizedCounter';
+import ElementGenerator from './components/ElementGenerator/ElementGenerator';
+import ContextWrapper from './components/ContextWrapper/ContextWrapper';
 import CustomHooks from './components/CustomHooks/CustomHooks';
 
 function App() {
@@ -11,22 +11,22 @@ function App() {
     <div className="wrapper">
       <h1>React Hooks</h1>
       {/* useState */}
-      {/* <Counter /> */}
+      <Counter />
 
       {/* useEffect */}
-      {/* <Tabs /> */}
+      <Tabs />
 
       {/* useRef */}
-      {/* <RenderCount /> */}
+      <RenderCount />
 
       {/* useMemo */}
-      {/* <OptimizedCounter /> */}
+      <OptimizedCounter />
 
       {/* useCallback */}
-      {/* <ElementGenerator /> */}
+      <ElementGenerator />
 
       {/* useContext / useReducer*/}
-      {/* <ContextWrapper /> */}
+      <ContextWrapper />
 
       {/* customHooks */}
       <CustomHooks />
