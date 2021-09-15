@@ -1,0 +1,19 @@
+.optimized-counter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 560px;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.optimized-counter h3 {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translate(-80%, -100%) rotate(-90deg);
+}
