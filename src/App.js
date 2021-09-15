@@ -4,6 +4,7 @@
 // import OptimizedCounter from './components/OptimizedCounter/OptimizedCounter';
 // import ElementGenerator from './components/ElementGenerator/ElementGenerator';
 // import ContextWrapper from './components/ContextWrapper/ContextWrapper';
+import CustomHooks from './components/CustomHooks/CustomHooks';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
 
       {/* useContext / useReducer*/}
       {/* <ContextWrapper /> */}
+
+      {/* customHooks */}
+      <CustomHooks />
     </div>
   );
 }
