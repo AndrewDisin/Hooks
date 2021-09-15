@@ -1,7 +1,9 @@
 // import Counter from './components/Counter/Counter';
 // import Tabs from './components/Tabs/Tabs';
 // import RenderCount from './components/RenderCount/RenderCount';
-import OptimizedCounter from './components/OptimizedCounter/OptimizedCounter';
+// import OptimizedCounter from './components/OptimizedCounter/OptimizedCounter';
+
+import ElementGenerator from './components/ElementGenerator/ElementGenerator';
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       {/* <Counter /> */}
       {/* <Tabs /> */}
       {/* <RenderCount /> */}
-      <OptimizedCounter />
+      {/* <OptimizedCounter /> */}
+      <ElementGenerator />
     </div>
   );
 }
