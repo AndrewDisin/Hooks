@@ -1,21 +1,39 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useReducer } from 'react';
 
 const AlertContext = React.createContext();
 
 export const useAlert = () => useContext(AlertContext);
 
-export const AlertProvider = ({ children }) => {
-  const [isAlertShow, setIsAlertShow] = useState(false);
+const SHOW_ALERT = 'show';
+const HIDE_ALERT = 'hide';
 
-  const toggle = () => {
-    setIsAlertShow((prev) => !prev);
-  };
+const reducer = (state, action) => {
+  switch (action.type) {
+    case SHOW_ALERT:
+      return { ...state, visible: true, text: action.text };
+    case HIDE_ALERT:
+      return { ...state, visible: false };
+    default:
+      return state;
+  }
+};
+
+export const AlertProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, {
+    visible: false,
+    text: '',
+  });
+
+  const showAlert = (text) => dispatch({ type: SHOW_ALERT, text });
+  const hideAlert = () => dispatch({ type: HIDE_ALERT });
 
   return (
     <AlertContext.Provider
       value={{
-        visible: isAlertShow,
-        toggle,
+        visible: state.visible,
+        text: state.text,
+        showAlert,
+        hideAlert,
       }}
     >
       {children}

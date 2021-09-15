@@ -8,7 +8,7 @@ export default function ContextWrapper() {
   return (
     <AlertProvider>
       <div className="context-wrapper">
-        <h3>useContext</h3>
+        <h3>useContext / useReducer</h3>
         <Alert />
         <Main />
       </div>

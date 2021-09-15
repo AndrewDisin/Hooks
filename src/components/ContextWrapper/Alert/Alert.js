@@ -5,11 +5,11 @@ import { useAlert } from './AlertContext';
 export default function Alert() {
   const isAlertShow = useAlert();
 
-  if (isAlertShow.visible) return null;
+  if (!isAlertShow.visible) return null;
 
   return (
-    <div className="alert" onClick={isAlertShow.toggle}>
-      <p>Important message</p>
+    <div className="alert" onClick={isAlertShow.hideAlert}>
+      <p>{isAlertShow.text}</p>
     </div>
   );
 }
