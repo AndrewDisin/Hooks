@@ -1,0 +1,9 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(247, 145, 162, 0.5);
+  color: rgb(235, 97, 97);
+  padding: 20px;
+  margin-top: 10px;
+}
